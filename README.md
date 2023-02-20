@@ -1,11 +1,18 @@
 # Audiobook Scraper
 
 - [Audiobook Scraper](#audiobook-scraper)
+  - [Supported sites 🌐](#supported-sites-)
   - [Disclaimer ⚠️](#disclaimer-️)
   - [About 📔](#about-)
   - [How to use 🚗](#how-to-use-)
     - [Prerequisites](#prerequisites)
     - [Run instructions](#run-instructions)
+  - [To Do ✅](#to-do-)
+
+## Supported sites 🌐
+
+1. [bookaudiobooks.com](https://bookaudiobooks.com/)
+2. [goldenaudiobook.com](https://goldenaudiobook.com/)
 
 ## Disclaimer ⚠️
 
@@ -18,7 +25,7 @@ This is not intended to be a tool to download books which should be bought to su
 
 ## How to use 🚗
 
-### Prerequisites  
+### Prerequisites
 
 1. npm
 2. node (tested on v18.0.0)
@@ -32,3 +39,9 @@ This is not intended to be a tool to download books which should be bought to su
 Example: `node run https://bookaudiobooks.com/book-to-download`
 
 It will create `books` directory and organize the files in structure `books/author/bookTitle` downloading the cover art first and proceeding with the audio.
+
+## To Do ✅
+
+- [ ] Add support for additional sites.
+- [ ] Fix cover art downloading error on goldenbooks
+- [ ] Rewrite the app in Go to avoid the need for node install
